@@ -1,0 +1,149 @@
+:root {
+    --primary-green: #2e7d32;
+    --light-green: #81c784;
+    --dark-green: #1b5e20;
+    --bg-light: #f1f8e9;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--bg-light);
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Стили для навигационной панели */
+.custom-navbar {
+    background-color: var(--primary-green) !important;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    padding: 1rem 0;
+}
+
+.custom-navbar .navbar-brand,
+.custom-navbar .nav-link {
+    color: white !important;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.custom-navbar .nav-link:hover {
+    color: var(--light-green) !important;
+    transform: translateY(-2px);
+}
+
+.custom-navbar .nav-link.active {
+    border-bottom: 2px solid white;
+}
+
+/* Главный баннер (Hero section) */
+.hero-section {
+    background: linear-gradient(135deg, var(--primary-green), var(--dark-green));
+    color: white;
+    padding: 100px 0;
+    margin-bottom: 2rem;
+    clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+}
+
+.btn-success {
+    background-color: var(--primary-green);
+    border-color: var(--dark-green);
+    transition: all 0.3s ease;
+}
+
+.btn-success:hover {
+    background-color: var(--dark-green);
+    transform: scale(1.05);
+}
+
+/* Заголовки секций */
+.section-title {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+    position: relative;
+    display: inline-block;
+}
+
+.section-title:after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    width: 50%;
+    height: 3px;
+    background-color: var(--primary-green);
+}
+
+/* Карточки фотографий */
+.photo-card {
+    border: none;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.photo-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+
+.photo-card img {
+    transition: transform 0.5s ease;
+    height: 250px;
+    object-fit: cover;
+}
+
+.photo-card:hover img {
+    transform: scale(1.05);
+}
+
+/* Стили для галереи (faculty.html) */
+.gallery-img {
+    transition: all 0.3s ease;
+    cursor: pointer;
+    height: 250px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.gallery-img:hover {
+    transform: scale(1.02);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+
+/* Футер (подвал) */
+.footer {
+    background-color: #fff;
+    border-top: 1px solid #ddd;
+    margin-top: 3rem;
+}
+
+/* Адаптивность для мобильных устройств */
+@media (max-width: 768px) {
+    .hero-section {
+        padding: 50px 0;
+        clip-path: polygon(0 0, 100% 0, 100% 95%, 0 100%);
+    }
+    
+    .display-3 {
+        font-size: 2rem;
+    }
+    
+    .section-title {
+        font-size: 1.8rem;
+    }
+    
+    .photo-card img {
+        height: 200px;
+    }
+}
+
+/* Анимация появления (fade-in) */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.fade-in {
+    animation: fadeIn 1s ease-out;
+}

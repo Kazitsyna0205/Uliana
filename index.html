@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Главная | Мое хобби и студенческая жизнь</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Подключаем Font Awesome для иконок -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- Наш собственный файл со стилями -->
+    <link href="styles.css" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Навигационное меню -->
+    <nav class="navbar navbar-expand-lg custom-navbar">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <i class="fas fa-leaf"></i> My Hobby World
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link active" href="index.html">Главная</a></li>
+                    <li class="nav-item"><a class="nav-link" href="profkom.html">Профком ТГПУ</a></li>
+                    <li class="nav-item"><a class="nav-link" href="faculty.html">Мой факультет</a></li>
+                    <li class="nav-item"><a class="nav-link" href="advice.html">Советы студенту</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Главный блок с приветствием -->
+    <header class="hero-section text-center">
+        <div class="container">
+            <h1 class="display-3 fade-in">Привет! Я студент ТГПУ</h1>
+            <p class="lead">Томский государственный педагогический университет</p>
+            <a href="#about" class="btn btn-success btn-lg mt-3">Узнать больше</a>
+        </div>
+    </header>
+
+    <!-- Секция "Обо мне" -->
+    <section id="about" class="container my-5">
+        <div class="row align-items-center">
+            <div class="col-md-6">
+                <img src="https://via.placeholder.com/500x400/2e7d32/ffffff?text=Мое+фото" alt="Мое фото" class="img-fluid rounded shadow">
+            </div>
+            <div class="col-md-6">
+                <h2 class="section-title">Кто я?</h2>
+                <p>Меня зовут [Ваше Имя], я студент ТГПУ. Мое главное хобби — [ваше хобби], что вдохновляет меня на активную студенческую жизнь. Я верю, что учеба может быть интересной, если подходить к ней творчески.</p>
+                <p>В свободное время я участвую в организации мероприятий, помогаю первокурсникам и развиваю студенческое самоуправление. В этом разделе я хочу поделиться своим опытом.</p>
+                <div class="mt-4">
+                    <span class="badge bg-success p-2">#ТГПУ</span>
+                    <span class="badge bg-success p-2">#Профком</span>
+                    <span class="badge bg-success p-2">#СтуденческаяЖизнь</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Подвал -->
+    <footer class="footer mt-auto py-3">
+        <div class="container text-center">
+            <span class="text-muted">© 2026 Мой студенческий опыт в ТГПУ</span>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Советы студенту | ТГПУ</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="styles.css" rel="stylesheet">
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg custom-navbar">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <i class="fas fa-leaf"></i> My Hobby World
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Главная</a></li>
+                    <li class="nav-item"><a class="nav-link" href="profkom.html">Профком ТГПУ</a></li>
+                    <li class="nav-item"><a class="nav-link" href="faculty.html">Мой факультет</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="advice.html">Советы студенту</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container mt-5">
+        <h1 class="section-title text-center">5 советов будущему студенту от бывалого</h1>
+        <p class="text-center lead">Как не выгореть в первую сессию и получить максимум от учебы</p>
+    </div>
+
+    <div class="container my-5">
+        <div class="row justify-content-center">
+            <div class="col-md-8">
+                <div class="advice-list">
+                    <div class="advice-item mb-4 p-3 border-start border-4 border-success">
+                        <h3><i class="fas fa-clock text-success"></i> 1. Управляйте своим временем</h3>
+                        <p>Используйте Google Calendar или Notion для планирования дедлайнов. Не откладывайте курсовые на последнюю ночь.</p>
+                    </div>
+                    <div class="advice-item mb-4 p-3 border-start border-4 border-success">
+                        <h3><i class="fas fa-hand-peace text-success"></i> 2. Вступайте в профком</h3>
+                        <p>Профсоюз — это не только льготы и билеты на концерты, но и защита ваших прав. Я вступил и ни разу не пожалел!</p>
+                    </div>
+                    <div class="advice-item mb-4 p-3 border-start border-4 border-success">
+                        <h3><i class="fas fa-people-arrows text-success"></i> 3. Забудьте про стеснение</h3>
+                        <p>Задавайте вопросы преподавателям. Они любят активных студентов. Это повышает шанс на автомат.</p>
+                    </div>
+                    <div class="advice-item mb-4 p-3 border-start border-4 border-success">
+                        <h3><i class="fas fa-dumbbell text-success"></i> 4. Найдите хобби</h3>
+                        <p>Университет — это не только лекции. Спорт, танцы, КВН помогут отвлечься и найти друзей.</p>
+                    </div>
+                    <div class="advice-item mb-4 p-3 border-start border-4 border-success">
+                        <h3><i class="fas fa-heart text-success"></i> 5. Берегите нервы и спите</h3>
+                        <p>Здоровье важнее красного диплома. Высыпайтесь и гуляйте.</p>
+                    </div>
+                </div>
+
+                <!-- Интерактивный блок с JavaScript -->
+                <div class="card mt-5 text-center p-4 shadow">
+                    <h3>Получить случайный совет дня</h3>
+                    <p id="randomTip" class="lead fst-italic">Нажмите на кнопку ниже</p>
+                    <button id="getTipBtn" class="btn btn-success mx-auto" style="width: 200px;">Дай совет!</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer mt-auto py-3">
+        <div class="container text-center">
+            <span class="text-muted">© 2026 Мой студенческий опыт в ТГПУ</span>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
